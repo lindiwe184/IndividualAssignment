@@ -1,9 +1,24 @@
+:root {
+    --siteBackgroundColor: hsla(0, 0%, 100%, 1);
+    --siteTitleColor: hsla(0, 0%, 0%, 1);
+    --solidHeaderBackgroundColor: hsla(0, 0%, 100%, 1);
+    --solidHeaderNavigationColor: hsla(0, 0%, 0%, 1);
+}
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #000; /* black background */
-    color: #fff; /* white text */
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f0f0; /* light gray */
+    background-image: url('images\RottenMangoBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black; 
     margin: 0;
     padding: 0;
+}
+
+.logo {
+    width: 100px;  /* adjust as needed */
+    height: auto;  /* maintains aspect ratio */
 }
 
 header {
@@ -37,10 +52,22 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.hero {
+    background-image: url('images\HERO.png');
+    height: 500px; /* Adjust as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
@@ -83,18 +110,6 @@ audio {
     margin-top: 10px;
 }
 
-.about-text {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-text {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 footer {
     background-color: #8b0000; /* dark red */
     color: #fff;
@@ -110,6 +125,13 @@ footer p {
     margin: 0;
 }
 
+.cta-button {
+    background-color: #ff0000; /* red */
+    color: #fff; /* white text */
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -123,4 +145,26 @@ footer p {
     .container {
         padding: 0 10px;
     }
+}
+
+.myClass {
+    background-color: white;
+    color: black;
+}
+
+* {
+    background-color: white;
+    color: black;
+}
+
+.banner-ad-container {
+    background-color: #f00;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-ad {
+    width: 100%;
+    border: 0;
 }

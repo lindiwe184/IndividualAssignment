@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotten Mango</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Rotten Mango</h1>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#blog">Blog</a>
-            <a href="#episodes">Episodes</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    <div class="content">
-        <section id="home" class="section">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotten Mango</title>
+        <link rel="stylesheet" href="css\styles.css">
+        <link rel="icon" href="images/RottenMangoLogo.png">
+    </head>
+    
+    <body>
+        <header>
             <div class="container">
-                <h2>Welcome to Rotten Mango</h2>
-                <p>Latest episodes and featured content.</p>
-                <div class="episode-entry">
+                <h1><a href="/" data-animation-role="header-element">
+                    <img src="images\RottenMangoLogo.png" alt="Rotten Mango" class="logo">
+                </a></h1>
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Search...">
+                    <input type="submit" value="Go">
+                </form>
+                </header>
+                
+                <nav>
+                    <div class="container">
+                        <a href="index.html">Home</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                </nav>
+                <!-- Existing HTML code... -->
+                
+                <!-- Add the new HTML code here -->
+                <div class="banner-ad-container">
+                    <iframe class="banner-ad" id="adIframe" src="#" ></iframe>
+                </div>
+
+                <main>
+                    <div class="hero"></div>
+                    <section class="content">
+                        <div class="container">
+                            <h2>Welcome to Rotten Mango</h2>
+                            <p>Latest episodes and featured content.</p>
+                            <article class="episode-entry">
                     <h3>Episode 1: The Haunting of a City – Case of Blanche Monnier</h3>
                     <audio controls>
                         <source src="https://pdst.fm/e/chtbl.com/track/42D75/traffic.megaphone.fm/CAD4086604971.mp3?updated=1716431808;$1300" type="audio/mpeg">
@@ -47,27 +60,19 @@
                         <source src="https://pdst.fm/e/chtbl.com/track/42D75/traffic.megaphone.fm/CAD3911153698.mp3?updated=1715788645;$1314" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                </div>
-                <!-- Continue adding more featured episodes as needed -->
+                </div> 
+                </article>
             </div>
         </section>
-        <section id="about" class="about-text section">
-            <div class="container">
-                <h2>About</h2>
-                <p>Rotten Mango is a true crime podcast that focuses on storytelling with a purpose. </p>
-                <p>Storytelling helps us feel connected, related, and feel empathy for one another.</p>
-                <p>We want to shed light on international stories that are lesser known, as we believe every story is worth telling.</p>
-            </div>
-        </section>
-        <section id="blog" class="section">
-            <div class="container">
-                <h2>Blog</h2>
-                <div class="blog-entry">
+
+       <section id="blog" class="section">
+                <div class="container">
+                    <h2>Blog</h2>
+                    <article class="blog-entry">
                     <h3>The Haunting of a City – Case of Blanche Monnier</h3>
                     <p>The year is 1901. A young woman has been missing for the past 25 years. No one knows what happened to her, and they are starting to lose hope.</p>
                     <p><a href="https://www.rottenmangopodcast.com/allepisodes/73ljn5j95wblmy6-rtapd-lbnay-l5dy9">Read more...</a></p>
                 </div>
-                <!-- Additional blog entries can be added here -->
                 <div class="blog-entry">
                     <h3>20 Police Officers Listened On The Phone As He Sliced Her Into 365 Pieces To Make Human Flesh Pills </h3>
                     <p>Oh Won is getting into his next at home project – everything is set up for success. He has a whole bottle of his favorite Chinese liquor. It’s stronger than Vodka, but he’s tossing it back like water. </p>
@@ -78,48 +83,32 @@
                     <p>The 3 Body Problem was going to be Jeff Bezoz’s billion dollar investment. The plan? Invest $1B into a new sci-fi series and watch the subscriptions to Amazon Prime Video flow in..</p>
                     <p><a href="https://www.rottenmangopodcast.com/allepisodes/73ljn5j95wblmy6-rtapd-lbnay-wz4n8">Read more...</a></p>
                 </div>
-                <!-- Continue adding more blog entries as needed -->
+            </article>
             </div>
-        </section>
-        <section id="episodes" class="section">
-            <div class="container">
-                <h2>Episodes</h2>
-                <div class="episode-entry">
-                    <h3>Episode 1: The Haunting of a City – Case of Blanche Monnier</h3>
-                    <audio controls>
-                        <source src="https://pdst.fm/e/chtbl.com/track/42D75/traffic.megaphone.fm/CAD4086604971.mp3?updated=1716431808;$1300" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <!-- Additional episodes can be added here -->
-                <div class="episode-entry">
-                    <h3>Episode 2: 20 Police Officers Listened On The Phone As He Sliced Her Into 365 Pieces To Make Human Flesh Pills </h3>
-                    <audio controls>
-                        <source src="https://pdst.fm/e/chtbl.com/track/42D75/traffic.megaphone.fm/CAD4614233892.mp3?updated=1716137157;$1307" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="episode-entry">
-                    <h3>Episode 3: Netflix’s “3 Body Problem” New Show Leads To MURDER Of YOUNG BILLIONAIRE</h3>
-                    <audio controls>
-                        <source src="https://pdst.fm/e/chtbl.com/track/42D75/traffic.megaphone.fm/CAD3911153698.mp3?updated=1715788645;$1314" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <!-- Continue adding more episodes as needed -->
-            </div>
-        </section>
-        <section id="contact" class="contact-text section">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Contact us at: <a href="mailto:220075565@nust.na">220075565@nust.na</a></p>
-            </div>
-        </section>
-    </div>
+        </section>  
+        </main>
+    
     <footer>
         <div class="container">
-            <p>&copy; 2024 Rotten Mango. All rights reserved.</p>
-        </div>
-    </footer>
+            <h1><a href="/" data-animation-role="footer-element">
+                <img src="images\RottenMangoLogo.png" alt="Your Logo" class="logo">
+            </a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+            <section>
+                <h2>About</h2>
+            <p>Rotten Mango is a true crime podcast that focuses on storytelling with a purpose. </p>
+            <p>Storytelling helps us feel connected, related, and feel empathy for one another.</p>
+            <p>We want to shed light on international stories that are lesser known, as we believe every story is wo</section>
+                <address>
+                    <h2>Contact</h2>
+                    <p>Contact us at: <a href="mailto:220075565@nust.na">220075565@nust.na</a></p>
+                </address>
+                <p>&copy; 2024 Rotten Mango. All rights reserved.</p>
+            </div>
+        </footer>
+    
 </body>
 </html>
